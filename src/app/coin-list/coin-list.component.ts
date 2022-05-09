@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoinListComponent implements OnInit {
 
+  bannerData: any = [];
   constructor(private servico: ApiService) { }
 
   ngOnInit(): void {
@@ -18,6 +19,7 @@ export class CoinListComponent implements OnInit {
   getBannerData(){
     this.servico.getTrendingCurrency("INR").subscribe(resultado => {
       console.log(resultado);
+      this.bannerData = resultado;
     });
   }
 
