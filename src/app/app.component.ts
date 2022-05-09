@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crip';
+  selectedCurrency: string = "";
+
+
+  sendCurrency(event: String){
+     console.log(event);
+  }
 }

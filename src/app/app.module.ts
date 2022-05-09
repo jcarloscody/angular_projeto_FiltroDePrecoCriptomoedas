@@ -7,12 +7,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from "@angular/material/input";
+import { FormsModule } from '@angular/forms';
+import { CoinListComponent } from './coin-list/coin-list.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CoinListComponent
   ],
   imports: [
     MatSelectModule,
+    FormsModule,
     MatInputModule,
     MatFormFieldModule,
     MatToolbarModule,
